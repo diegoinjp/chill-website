@@ -1,0 +1,30 @@
+:root {
+  --header-height: 4rem;
+
+  // COLORS
+
+  --primary: hsl(260, 100%, 64%);
+  --primary-light: hsl(260, 100%, 70%);
+  --primary-alt: hsl(174, 62%, 57%);
+  --secondary: hsl(344, 58%, 56%);
+  --secondary-light: hsl(344, 58%, 66%);
+  --secondary-alt: hsl(15, 60%, 55%);
+
+  --text: hsl(207, 95%, 8%);
+  --text-alt: hsl(207, 95%, 8%);
+  --text-btn: hsl(100, 100%, 99%);
+
+  --background1:hsla(220, 14%, 96%, 1);
+  --background2: hsla(220, 13%, 91%, 1);
+
+  --bg1: linear-gradient(var(--background1) 30%, var(--background2));
+  --modal: hsla(220, 14%, 86%, .97);
+  --text-modal: hsla(221, 39%, 11%, 1);
+}
+
+/*
+ --primary: hsl(174, 62%, 47%);
+  --primary-alt: hsl(174, 62%, 57%);
+  --secondary: hsl(35, 100%, 55%);
+  --secondary-alt: hsl(35, 100%, 60%);
+*/

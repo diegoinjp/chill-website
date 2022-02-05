@@ -1,0 +1,12 @@
+.dark-theme {
+  --text: hsl(100, 100%, 99%);
+  --text-alt: hsl(207, 95%, 8%);
+
+  --background1:hsla(215, 28%, 17%, 1);
+  --background2: hsla(221, 39%, 11%, 1);
+
+  --bg1: linear-gradient(150deg, var(--background1) 30%, var(--background2));
+
+  --modal: hsla(221, 39%, 11%, .97);
+  --text-modal: hsla(220, 14%, 96%, 1);
+}

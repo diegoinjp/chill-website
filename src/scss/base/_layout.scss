@@ -1,0 +1,20 @@
+.section {
+  padding: 4.5rem 0 1rem;
+
+  &__title {
+    font-size: 2rem;
+    color: var(--text);
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+}
+
+.container{
+  max-width: 968px;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.grid{
+  display: grid;
+}

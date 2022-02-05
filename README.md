@@ -1,2 +1,2 @@
-# chill-website
+# chill
 Created with CodeSandbox

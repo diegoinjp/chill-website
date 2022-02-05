@@ -1,0 +1,29 @@
+/* For small devices */
+@media screen and (max-width: 380px){}
+
+/* For medium devices */
+@media screen and (min-width: 568px){}
+
+@media screen and (min-width: 768px){}
+
+/* For large devices */
+@media screen and (min-width: 1024px){}
+
+@media screen and (min-width: 1200px){
+  .container{
+      max-width: 1024px;
+  }
+}
+
+/* For tall screens on mobiles y desktop*/
+@media screen and (min-height: 721px){
+  body{
+      margin: 0;
+  }
+  .home{
+      &__container,
+      &__img{
+          height: 640px;
+      }
+  }
+}
