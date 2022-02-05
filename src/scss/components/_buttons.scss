@@ -1,20 +1,22 @@
-.btn1 {
-  padding: .7rem 1.5rem;
-  background-color: var(--primary);
-  color: var(--text-btn);
+.btn {
+  &-1 {
+    padding: .7rem 1.5rem;
+    color: var(--text-btn);
+    background-color: var(--primary);
 
-  &:hover {
-    background-color: var(--primary-light);
+    &:hover {
+      background-color: var(--primary-light);
+    }
   }
-}
 
-.btn2 {
-  padding: .7rem 1.5rem;
-  background-color: var(--secondary);
-  color: var(--text-btn);
+  &-2 {
+    padding: .7rem 1.5rem;
+    color: var(--text-btn);
+    background-color: var(--secondary);
 
-  &:hover {
-    background-color: var(--secondary-light);
+    &:hover {
+      background-color: var(--secondary-light);
+    }
   }
+  
 }
-

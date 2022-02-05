@@ -1,10 +1,22 @@
 /* For small devices */
-@media screen and (max-width: 380px){}
+@media screen and (max-width: 380px){
+  
+}
 
 /* For medium devices */
-@media screen and (min-width: 568px){}
+@media screen and (min-width: 568px){
 
-@media screen and (min-width: 768px){}
+}
+
+@media screen and (min-width: 768px){
+  .home {
+    &__img {
+      display: block;
+      width: 50%;
+      max-height: 60vh;
+    }
+  }
+}
 
 /* For large devices */
 @media screen and (min-width: 1024px){}
@@ -25,5 +37,12 @@
       &__img{
           height: 640px;
       }
+  }
+}
+
+@media screen and (min-width: 992px){
+  .container{
+      margin-left: auto;
+      margin-right: auto;
   }
 }

@@ -10,14 +10,14 @@
   --secondary-light: hsl(344, 58%, 66%);
   --secondary-alt: hsl(15, 60%, 55%);
 
-  --text: hsl(207, 95%, 8%);
-  --text-alt: hsl(207, 95%, 8%);
+  --text: hsl(207, 95%, 13%);
   --text-btn: hsl(100, 100%, 99%);
 
-  --background1:hsla(220, 14%, 96%, 1);
-  --background2: hsla(220, 13%, 91%, 1);
+  --background1:hsla(220, 14%, 91%, 1);
+  --background2: hsla(220, 13%, 85%, 1);
 
   --bg1: linear-gradient(var(--background1) 30%, var(--background2));
+  // --bg2: linear-gradient(90deg, var())
   --modal: hsla(220, 14%, 86%, .97);
   --text-modal: hsla(221, 39%, 11%, 1);
 }
