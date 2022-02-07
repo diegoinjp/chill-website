@@ -9,7 +9,7 @@
   }
 
   &-2 {
-    background: linear-gradient(270deg, var(--secondary), var(--secondary-alt));
+    background: linear-gradient(270deg, var(--secondary-alt), var(--secondary));
     background-size: 400% 400%;
 
     -webkit-animation: slow 20s ease infinite;

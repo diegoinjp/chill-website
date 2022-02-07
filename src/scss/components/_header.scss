@@ -5,21 +5,36 @@
   top: 0;
   left: 0;
   z-index: 100;
+  transition: .3s;
 }
 
 .nav {
   height: var(--header-height);
   display: flex;
-  justify-content: end;
+  justify-content: space-between;
+  align-items: center;
 
   &__btn {
     display: none;
   }
 
+  &__logo {
+    opacity: 0;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.7rem;
+    color: var(--text);
+  }
+
   &__menu {
     display: flex;
-    gap: 1rem;
+    gap: 3rem;
     align-items: center;
+    
+    & div .btn {
+      padding-left: 0;
+      padding-right: 0;
+      width: 3.5rem;
+    }
   }
 
   &__link {
@@ -43,7 +58,7 @@
     }
   }
 
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 767px) {
     &__menu {
       display: flex;
       flex-direction: column;
@@ -54,7 +69,8 @@
       height: 100vh;
       justify-content: center;
       align-items: center;
-      background-color: var(--modal);
+      background-color: var(--curtain);
+      overflow-y: hidden;
       gap: 3.2rem;
       transition: .3s;
     }
@@ -85,7 +101,7 @@
       width: 2rem;
       height: .2rem;
       background-color: var(--text-btn);
-      transition: transform .3s, color .3s, opacity .2s;
+      transition: .3s;
     }
   }
 }
@@ -110,3 +126,23 @@
   }
 }
 
+.scroll-header {
+  background-color: var(--header-color);
+  box-shadow: var(--shadow1);
+
+  & .nav {
+    &__logo {
+      opacity: 1;
+    }
+    &__btn {
+      top: 1.25rem;
+      right: 1.25rem;
+    }
+    &__link  {
+      color: var(--text);
+    }
+    &__bar, &__link::after {
+      background-color: var(--text);
+    }
+  }
+}

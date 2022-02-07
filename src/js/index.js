@@ -71,16 +71,37 @@ function linkAction() {
 
 navLink.forEach((n) => n.addEventListener("click", linkAction));
 
-/* Scroll
-
-
-
-function scrollUp(){
-  const scrollUp = document.getElementById('scroll-up');
-  // When the scroll is higher than 460 viewport height, add the show-scroll class to the a tag with the scroll-top class
-  if(this.scrollY >= 460) scrollUp.classList.add('show-scroll'); else scrollUp.classList.remove('show-scroll')
+/*=============== CHANGE BACKGROUND HEADER ===============*/
+function scrollHeader() {
+  const header = document.getElementById("header");
+  // When the scroll is greater than 50 viewport height, add the scroll-header class to the header tag
+  if (this.scrollY >= 70) {
+    header.classList.add("scroll-header");
+  } else {
+    header.classList.remove("scroll-header");
+  }
 }
-window.addEventListener('scroll', scrollUp)
+window.addEventListener("scroll", scrollHeader);
+
+/*=============== OPEN MODAL ===============*/
+
+let regBtn = document.getElementById("registerbtn"),
+  close = document.querySelector(".close"),
+  modal = document.querySelector(".modal");
+
+regBtn.addEventListener("click", () => {
+  modal.style.display = "flex";
+});
+
+close.addEventListener("click", () => {
+  modal.style.display = "none";
+});
+
+window.onclick = function (event) {
+  if (event.target === modal) {
+    modal.style.display = "none";
+  }
+};
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
 // const sr = ScrollReveal({

@@ -10,8 +10,9 @@
   </head>
 
   <body>
-    <header class="header">
+    <header class="header" id="header">
       <nav class="nav container">
+        <a href="#" class="nav__logo">Chill</a>
         <div class="nav__btn">
           <div class="nav__bar"></div>
           <div class="nav__bar"></div>
@@ -22,46 +23,265 @@
           <a href="#services" class="nav__link">services</a>
           <a href="#download" class="nav__link">download</a>
           <a href="#contact" class="nav__link">contact</a>
-          <button class="btn-2" id="theme-toggle">Dark</button>
+          <div>
+            <button class="btn pink" id="theme-toggle">Dark</button>
+            <button class="btn orange" id="lang-toggle">EN</button>
+          </div>
         </div>
       </nav>
     </header>
 
     <main>
       <!-- HOME -->
-      <section class="home g-1">
-        <div class="hero">
-          <h1 class="hero__logo">Chill</h1>
-          <div class="hero__sub">
-            <p class="langitem" lang="en">
-              To relax means to calm the mind, the body, or both.
-            </p>
-            <p class="langitem" lang="jp">
-              心、体、またはその両方を落ち着かせることを意味します。
-            </p>
+      <section class="g-1">
+        <div class="home">
+          <div class="hero">
+            <h1 class="hero__logo">Chill</h1>
+            <div class="hero__sub">
+              <p class="langitem" lang="en">
+                To relax means to calm the mind, the body, or both. Lorem ipsum,
+                dolor sit amet consectetur adipisicing elit. Nihil, odit.
+              </p>
+              <p class="langitem" lang="jp">
+                心、体、またはその両方を落ち着かせることを意味します。心、体、またはその両方を落ち着かせることを意味します。
+              </p>
+            </div>
+            <button class="btn pink" id="registerbtn">
+              <span class="langitem" lang="en">Learn More</span>
+              <span class="langitem" lang="jp">もっと見る</span>
+            </button>
           </div>
-          <button class="langitem btn-2" lang="en">Learn More</button>
-          <button class="langitem btn-2" lang="jp">もっと見る</button>
+          <!-- SVG here -->
+          <img src="src/img/creative.svg" class="home__img" alt="" />
+          <i class="hero__scroll bx bx-chevron-down"></i>
         </div>
-        <!-- SVG here -->
-        <img src="src/img/creative.svg" class="home__img" alt="" />
-        <i class="hero__scroll bx bx-chevron-down"></i>
+
+        <div class="modal">
+          <div class="modal__content">
+            <span class="close">&times;</span>
+            <form action="">
+              <label for="enmail" class="langitem" lang="en">Your Mail: </label>
+              <label for="jpmail" class="langitem" lang="jp">メール：</label>
+              <input
+                type="email"
+                class="langitem"
+                id="enmail"
+                lang="en"
+                placeholder="Introduce your mail.."
+              />
+              <input
+                type="email"
+                class="langitem"
+                id="jpmail"
+                lang="jp"
+                placeholder="君のメールは。。"
+              />
+
+              <label for="enpass" class="langitem" lang="en">Password:</label>
+              <label for="jppass" class="langitem" lang="jp"
+                >パスワード：</label
+              >
+              <input
+                type="password"
+                class="langitem"
+                id="enpass"
+                placeholder="Introduce a password"
+                lang="en"
+              />
+              <input
+                type="password"
+                class="langitem"
+                id="jppass"
+                placeholder="パスワードを入力してください"
+                lang="jp"
+              />
+
+              <label for="confirm_enpass" class="langitem" lang="en"
+                >Confirm password:</label
+              >
+              <label for="confirm_jppass" class="langitem" lang="jp"
+                >パスワード：</label
+              >
+              <input
+                type="password"
+                class="langitem"
+                id="confirm_enpass"
+                placeholder="Introduce a password"
+                lang="en"
+              />
+              <input
+                type="password"
+                class="langitem"
+                id="confirm_jppass"
+                placeholder="パスワードを入力してください"
+                lang="jp"
+              />
+
+              <input type="submit" class="langitem" lang="en" value="Sign Up" />
+              <input
+                type="submit"
+                class="langitem"
+                lang="jp"
+                value="アカウト登録"
+              />
+            </form>
+          </div>
+        </div>
       </section>
 
       <!-- ABOUT -->
-      <section class="section about" id="about">
+      <section class="section about container" id="about">
         <h1 class="section__title">About</h1>
+        <h3 class="about__sub langitem" lang="en"></h3>
+        <h3 class="about__sub langitem" lang="jp"></h3>
+        <div class="about__content grid">
+          <div class="about__card">
+            <img src="src/img/collab.svg" alt="" />
+            <h2 class="langitem" lang="en">Custom Design</h2>
+            <h2 class="langitem" lang="jp">カスタムデザイン</h2>
+
+            <p class="langitem" lang="en">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Praesentium consequuntur fugit doloribus porro provident soluta
+              asperiores? Officiis itaque quam illo.
+            </p>
+            <p class="langitem" lang="jp">
+              記提殺ッ通調チメミ売紹おれ康紙メ品小やり一葛んたさか実側ヤミ一第かご話明た芸防の供康げみあ女魚株す。書ひき位混ではち島特チヒタテ変展じン易9知稿決ス森高府マコ大経ウノサ児米こラぞや病困クよを補界づよ更症波贈家りっを。
+            </p>
+            <button class="btn pink">
+              <span class="langitem" lang="en">Learn More</span>
+              <span class="langitem" lang="jp">もっと見る</span>
+            </button>
+          </div>
+          <div class="about__card">
+            <img src="src/img/mobile.svg" alt="" />
+            <h2 class="langitem" lang="en">Easy to use</h2>
+            <h2 class="langitem" lang="jp">使いやすい</h2>
+
+            <p class="langitem" lang="en">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus
+              nam minima distinctio, officia tempora vero velit facilis! Sunt,
+              deleniti temporibus.
+            </p>
+            <p class="langitem" lang="jp">
+              記提殺ッ通調チメミ売紹おれ康紙メ品小やり一葛んたさか実側ヤミ一第かご話明た芸防の供康げみあ女魚株す。書ひき位混ではち島特チヒタテ変展じン易9知稿決ス森高府マコ大経ウノサ児米こラぞや病困クよを補界づよ更症波贈家りっを。
+            </p>
+            <button class="btn pink">
+              <span class="langitem" lang="en">Learn More</span>
+              <span class="langitem" lang="jp">もっと見る</span>
+            </button>
+          </div>
+          <div class="about__card">
+            <img src="src/img/writing2.svg" alt="" />
+            <h2 class="langitem" lang="en">High Performance</h2>
+            <h2 class="langitem" lang="jp">高性能</h2>
+
+            <p class="langitem" lang="en">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus
+              nam minima distinctio, officia tempora vero velit facilis! Sunt,
+              deleniti temporibus.
+            </p>
+            <p class="langitem" lang="jp">
+              記提殺ッ通調チメミ売紹おれ康紙メ品小やり一葛んたさか実側ヤミ一第かご話明た芸防の供康げみあ女魚株す。書ひき位混ではち島特チヒタテ変展じン易9知稿決ス森高府マコ大経ウノサ児米こラぞや病困クよを補界づよ更症波贈家りっを。
+            </p>
+            <button class="btn pink">
+              <span class="langitem" lang="en">Learn More</span>
+              <span class="langitem" lang="jp">もっと見る</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- SERVICES -->
+
+      <section class="section services" id="services">
+        <div class="services__content container">
+          <div class="services__gradient g-2"></div>
+          <div class="services__data">
+            <img src="src/img/apuri.svg" alt="" class="services__img" />
+            <div class="services__text">
+              <h1 class="section__title">Services</h1>
+              <p class="langitem" lang="en">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Blanditiis temporibus veritatis voluptas iusto doloribus
+                repellat accusamus voluptatum! Alias aperiam consequuntur nulla
+                a, dolores,in esse modi nam fugiat culpa officia, quia ea
+                ducimus fuga amet
+              </p>
+              <p class="langitem" lang="jp">
+                記提殺ッ通調チメミ売紹おれ康紙メ品小やり一葛んたさか実側ヤミ一第かご話明た芸防の供康げみあ女魚株す。書ひき位混ではち島特チヒタテ変展じン易9知稿決ス森高府マコ大経ウノサ児米こラぞや病困クよを補界づよ更症波贈家りっを。
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- LETTERBOX -->
+      <section class="section download" id="letter">
+        <div class="letter__content container">
+          <h1 class="section__title">Letterbox</h1>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+
+      <section class="section contact" id="contact">
+        <div class="contact__content">
+          <div class="contact__gradient g-1"></div>
+          <div class="contact__data">
+            <form action="" class="contact__form">
+              <h1 class="section__title">Contact</h1>
+              <input
+                type="email"
+                class="langitem"
+                id="enname"
+                lang="en"
+                placeholder="Your name.."
+              />
+              <input
+                type="email"
+                class="langitem"
+                id="jpname"
+                lang="jp"
+                placeholder="君の名は。。"
+              />
+              <input
+                type="email"
+                class="langitem"
+                id="cenmail"
+                lang="en"
+                placeholder="Introduce your mail.."
+              />
+              <input
+                type="email"
+                class="langitem"
+                id="cjpmail"
+                lang="jp"
+                placeholder="君のメールは。。"
+              />
+
+              <input
+                type="text"
+                class="langitem"
+                id="cencont"
+                lang="en"
+                placeholder="Write something"
+              />
+              <input
+                type="text"
+                class="langitem"
+                id="cjpcont"
+                lang="jp"
+                placeholder="内容を書いてください"
+              />
+
+              <input type="submit" class="langitem" lang="en" value="Submit" />
+              <input type="submit" class="langitem" lang="jp" value="送信" />
+            </form>
+          </div>
+        </div>
       </section>
     </main>
-
-    <div class="p-3">
-      <button class="btn-2" id="lang-toggle">EN</button>
-    </div>
-
-    <div class="p-3 g-2">
-      <p class="langitem" lang="en">hello</p>
-      <p class="langitem" lang="jp">こんにちは</p>
-    </div>
 
     <script src="https://unpkg.com/boxicons@2.1.1/dist/boxicons.js"></script>
     <script src="src/js/index.js"></script>

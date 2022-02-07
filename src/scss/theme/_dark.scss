@@ -7,6 +7,13 @@
 
   --bg1: linear-gradient(150deg, var(--background1) 30%, var(--background2));
 
-  --modal: hsla(221, 39%, 11%, .97);
+  --curtain: hsla(221, 39%, 11%, .97);
   --text-modal: hsla(220, 14%, 96%, 1);
+
+  --card: hsla(215, 28%, 22%, 1);
+
+  --header-color: hsla(215, 28%, 17%, .95);
+
+  --shadow1: hsla(240, 30%, 8%, 0.45) 0px 3px 5px -2px, hsla(0, 0%, 0%, 0.6) 0px 3px 5px -3px;
+  --shadow2: hsla(240, 30%, 8%, 0.25) 0px 13px 27px -5px, hsla(0, 0%, 0%, 0.3) 0px 8px 16px -8px;
 }

@@ -1,0 +1,35 @@
+.contact {
+  position: relative;
+  display: flex;
+  background: var(--background1);
+
+  &__gradient {
+    position: absolute;
+    width: 40%;
+    height: 100%;
+    top: 0;
+    right: 0;
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 968px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__data {
+    display: flex;
+    position: relative;
+    max-width: 40rem;
+    width: 90%;
+    
+    & form {
+      padding: 2rem;
+      background: var(--background1);
+      box-shadow: var(--shadow2);
+    }
+  }
+}

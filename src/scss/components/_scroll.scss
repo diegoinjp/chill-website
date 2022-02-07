@@ -1,0 +1,10 @@
+::-webkit-scrollbar{
+  width: .4rem;
+  background: hsl(220, 21%, 25%);
+  overflow-y: auto;
+
+  &-thumb{
+      background: hsl(220, 23%, 15%);
+      border-radius: .3rem;
+  }
+}
