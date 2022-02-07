@@ -1,7 +1,7 @@
 .services {
   position: relative;
   display: flex;
-  background: var(--background1);
+  background: var(--background2);
 
   &__gradient {
     position: absolute;
@@ -19,6 +19,11 @@
   &__data {
     position: relative;
     margin-left: 33%;
+  }
+
+  &__text {
+    margin-top: auto;
+    margin-bottom: auto;
   }
 }
 

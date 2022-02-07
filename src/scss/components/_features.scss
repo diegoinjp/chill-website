@@ -1,6 +1,6 @@
-.about {
+.features {
 
-  &, .section__title {
+  & .section__title {
     text-align: center;
   }
 
@@ -21,6 +21,17 @@
     padding: 1.3rem;
     max-width: 25rem;
     box-shadow: var(--shadow2);
+    position: relative;
     color: var(--text);
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      border: 20px solid transparent;
+      border-top: 20px solid var(--secondary);
+      border-right: 20px solid var(--secondary);
+    }
   }
 }

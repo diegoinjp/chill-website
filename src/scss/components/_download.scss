@@ -1,0 +1,23 @@
+.download {
+  background: var(--bg1);
+
+  &__content{ 
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  &__btns {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem 0;
+  }
+
+  & .section__title {
+    text-align: center;
+  }
+}
+

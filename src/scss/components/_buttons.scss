@@ -1,6 +1,13 @@
 .btn {
   padding: .7rem 1.5rem;
   color: var(--text-btn);
+
+  &-flex{
+    display: inline-flex;
+    align-items: center;
+    column-gap: .25rem;
+    padding: .75rem 1rem;
+  }
 }
 
 .orange {
@@ -15,5 +22,13 @@
 
   &:hover {
     background-color: var(--secondary-light);
+  }
+}
+
+.violet {
+  background-color: var(--primary);
+
+  &:hover {
+    background-color: var(--primary-light);
   }
 }

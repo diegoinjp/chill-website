@@ -21,15 +21,34 @@
   }
 
   &__data {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr;
     position: relative;
-    max-width: 40rem;
+    gap: 1rem;
+    z-index: 10;
     width: 90%;
-    
-    & form {
-      padding: 2rem;
-      background: var(--background1);
-      box-shadow: var(--shadow2);
+    max-width: 40rem;
+    padding: 2rem;
+    background: var(--background1);
+    box-shadow: var(--shadow2);
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 1.8rem;
+      right: 2rem;
+      background: var(--secondary-alt);
+      width: 10%;
+      height: .3rem;
     }
+
   }
+
+  &__text h1 {
+    margin-bottom: 1rem;
+  }
+}
+
+#cencont, #cjpcont {
+  height: 6rem;
 }
