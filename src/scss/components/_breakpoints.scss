@@ -23,10 +23,10 @@
   .download {
     &__content {
       flex-direction: row;
-      gap: 5rem;
-
-      & .btn {
-        font-size: 1.2rem;
+      gap: 2rem;
+      
+      &__img {
+        width: 30%;
       }
     }
 
